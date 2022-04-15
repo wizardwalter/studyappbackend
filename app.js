@@ -38,6 +38,6 @@ app.use((req,res,next)=>{
 app.use('/questions', questionsRoute)
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server is listening on port: ${port}`);
 });
